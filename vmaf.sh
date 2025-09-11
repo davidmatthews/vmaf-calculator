@@ -1,5 +1,5 @@
 #!/bin/bash
-# Usage: ./calc_vmaf_abav1.sh source.mkv encoded.mkv top right bottom left
+# Usage: ./vmaf.sh source.mkv encoded.mkv top right bottom left
 
 set -e
 
