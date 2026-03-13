@@ -64,7 +64,7 @@ VMAF_SCORE_2D=$(awk -v s="$VMAF_SCORE" 'BEGIN {printf "%.2f", s}')
 # Prepare new filename
 BASENAME="${ENCODED%.*}"
 EXT="${ENCODED##*.}"
-NEW_NAME="${BASENAME}_VMAF${VMAF_SCORE_2D}.${EXT}"
+NEW_NAME="${BASENAME}-VMAF${VMAF_SCORE_2D}.${EXT}"
 
 # Rename encoded file
 mv "$ENCODED" "$NEW_NAME"
